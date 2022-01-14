@@ -1,4 +1,5 @@
 ﻿using System;
+using MyUtilities;
 
 namespace MyFirstProgramb
 {
@@ -7,6 +8,8 @@ namespace MyFirstProgramb
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            var res= MyUtilities.WeatherUtilities.FahrenheitToCelsius(1f);
+            Console.WriteLine(res);
         }
     }
 }
